@@ -2,6 +2,7 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
+const authMiddleware=require("../middleware/authMiddleware");
 
 const router = express.Router();
 
@@ -69,6 +70,13 @@ router.post("/login", async (req, res) => {
       message: error.message,
     });
   }
+});
+
+router.get("/profile", authMiddleware, (req, res) => {
+  res.json({
+    message: "Protected route accessed",
+    user: req.user
+  });
 });
 
 module.exports = router;
