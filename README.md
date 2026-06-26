@@ -133,6 +133,6 @@ This project is developed for learning and portfolio purposes.
 
 **Megha Bhardwaj**
 
-LinkedIn: https://www.linkedin.com/in/your-linkedin/
+LinkedIn: https://www.linkedin.com/in/megha-bhardwaj-3a4239306
 
-GitHub: https://github.com/your-github
+GitHub: https://github.com/Megha-coder-creator
