@@ -1,11 +1,12 @@
 const jwt = require("jsonwebtoken");
 
 const authMiddleware = (req, res, next) => {
-  const token = req.header("Authorization");
+  const authHeader = req.header("Authorization");
+  const token = authHeader && authHeader.split(" ")[1];
 
   if (!token) {
     return res.status(401).json({
-      message: "No token, authorization denied"
+      message: "No token, authorization denied",
     });
   }
 
@@ -15,7 +16,7 @@ const authMiddleware = (req, res, next) => {
     next();
   } catch (error) {
     res.status(401).json({
-      message: "Token is not valid"
+      message: "Token is not valid",
     });
   }
 };

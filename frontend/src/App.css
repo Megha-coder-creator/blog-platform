@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f8fafc;
+    color:#212529;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#ffffff !important;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    padding:14px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    position: sticky;
+    z-index:1000;
+}
+
+.navbar-brand{
+    font-weight:700;
+    color:#212529 !important;
+}
+
+.nav-link{
+    color:#212529 !important;
+    margin-left:18px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#0d6efd !important;
+}
+
+/* Cards */
+
+.card{
+    background:#ffffff !important;
+    border:none !important;
+    border-radius:18px !important;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    transition:.3s;
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+}
+
+.card-body{
+    padding:25px;
+}
+
+.card-title{
+    color:#2563eb;
+    font-weight:700;
+}
+
+.card-text{
+    color:#475569;
+    line-height:1.7;
+}
+
+/* Buttons */
+
+.btn-primary{
+    background:#0d6efd !important;
+    border:none !important;
+    border-radius:30px !important;
+}
+
+.btn-primary:hover{
+    background:#0b5ed7 !important;
+}
+
+/* Forms */
+
+.form-control{
+    border-radius:10px;
+}
+
+.form-control:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+}
+
+/* Headings */
+
+h1,h2{
+    font-weight:700;
+    color:#1e293b;
+}
+
+.container{
+    margin-top:40px;
+}
+
+body{
+    background:#f4f7fb;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.card{
+    border:none !important;
+    border-radius:20px !important;
+    transition:.3s;
+}
+
+.card-body{
+  display: flex;
+  flex-direction:column;
+}
+
+.card-body .btn{
+  margin-top: auto;
+
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15)!important;
+}
+
+.btn-primary{
+    border-radius:50px;
+    padding:10px 24px;
+    font-weight:600;
+    background: #0d6efd;
+    border:none;
+    transition:0.3s;
+}
+
+h1{
+    color:#1f2937;
+}
+
+.nav-link{
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#0d6efd !important;
+}
+
+.navbar-brand{
+    letter-spacing:.5px;
+}
+
+.card img{
+  height:220px;
+  object-fit: cover;
+}
